@@ -98,6 +98,11 @@ function doOperation() {
 
 doOperation();
 
+
+//Preforming callback functions like this are an example of a call back hell
+//This makes it harder to not only read but also debug 
+//This is because there could have errors on every level instead of the top level 
+//Like that of the previous setup
 function doStep1(init,callback) {
     const result = init + 1;
     callback(result;)
